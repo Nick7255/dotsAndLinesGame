@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Circle?>
@@ -8,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dotsandlinesgame.gameController">
+<AnchorPane fx:id="container" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dotsandlinesgame.gameController">
    <children>
       <Label fx:id="Player1Name" alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="382.0" layoutY="80.0" prefHeight="34.0" prefWidth="141.0" text="Label" textAlignment="CENTER">
          <font>
@@ -105,7 +106,30 @@
             <Font size="19.0" />
          </font>
       </Label>
-      <Label fx:id="nowPlaying1" layoutX="447.0" layoutY="51.0" prefHeight="17.0" prefWidth="84.0" />
-      <Label fx:id="nowPlaying2" layoutX="447.0" layoutY="213.0" prefHeight="17.0" prefWidth="84.0" />
+      <Label fx:id="nowPlaying1" layoutX="430.0" layoutY="51.0" prefHeight="25.0" prefWidth="101.0">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="nowPlaying2" layoutX="430.0" layoutY="213.0" prefHeight="25.0" prefWidth="101.0">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Button fx:id="button1" layoutX="103.0" layoutY="87.0" mnemonicParsing="false" onAction="#scoreUp" prefHeight="34.0" prefWidth="40.0"  />
+      <Button fx:id="button2" layoutX="170.0" layoutY="87.0" mnemonicParsing="false" onAction="#scoreUp" prefHeight="34.0" prefWidth="40.0"  />
+      <Button fx:id="button3" layoutX="237.0" layoutY="87.0" mnemonicParsing="false" onAction="#scoreUp" prefHeight="34.0" prefWidth="40.0"  />
+      <Button fx:id="button4" layoutX="304.0" layoutY="87.0" mnemonicParsing="false" onAction="#scoreUp" prefHeight="34.0" prefWidth="40.0"  />
+      <Button fx:id="button5" layoutX="170.0" layoutY="152.0" mnemonicParsing="false" onAction="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
+      <Button fx:id="button6" layoutX="237.0" layoutY="151.0" mnemonicParsing="false" onAction="#scoreUp" prefHeight="34.0" prefWidth="40.0"  />
+      <Button fx:id="button7" layoutX="304.0" layoutY="152.0" mnemonicParsing="false" onAction="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
+      <Button fx:id="button8" layoutX="104.0" layoutY="217.0" mnemonicParsing="false" onAction="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
+      <Button fx:id="button9" layoutX="103.0" layoutY="152.0" mnemonicParsing="false" onAction="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
+      <Button fx:id="button10" layoutX="170.0" layoutY="217.0" mnemonicParsing="false" onAction="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
+      <Button fx:id="button11" layoutX="237.0" layoutY="217.0" mnemonicParsing="false" onAction="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
+      <Button fx:id="button12" layoutX="304.0" layoutY="217.0" mnemonicParsing="false" onAction="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
+      <Button fx:id="button13" layoutX="104.0" layoutY="282.0" mnemonicParsing="false" onAction="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
+      <Button fx:id="button14" layoutX="170.0" layoutY="282.0" mnemonicParsing="false" onAction="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
+      <Button fx:id="button15" layoutX="237.0" layoutY="281.0" mnemonicParsing="false" onAction="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
+      <Button fx:id="button16" layoutX="304.0" layoutY="282.0" mnemonicParsing="false" onAction="#scoreUp" prefHeight="34.0" prefWidth="40.0"/>
+      <Button fx:id="switcher" layoutX="198.0" layoutY="355.0" mnemonicParsing="false" onAction="#switchTurns" text="Switch Turns" />
    </children>
 </AnchorPane>

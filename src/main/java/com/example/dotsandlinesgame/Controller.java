@@ -29,6 +29,8 @@ public class Controller {
     private Stage stage;
     private Scene scene;
 
+    String s = "Now Playing...";
+
 
     public void submit1(ActionEvent event) {
         String username1 = player1TextField.getText();
@@ -49,6 +51,7 @@ public class Controller {
         gameController controllerForGame = loader.getController();
         controllerForGame.Player1Name(user1);
         controllerForGame.Player2Name(user2);
+        controllerForGame.initializeTurn(s);
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 
         scene = new Scene(root);

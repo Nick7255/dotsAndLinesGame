@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dotsandlinesgame.Controller">
+   <children>
+      <Label layoutX="81.0" layoutY="57.0" text="Welcome to the dots and lines game">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="122.0" text="submit player 1 and player 2 names below">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="player1Name" layoutX="409.0" layoutY="184.0" text="Player 1">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="player2Name" layoutX="409.0" layoutY="296.0" text="Player 2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="player1TextField" layoutX="214.0" layoutY="188.0" promptText="name" />
+      <TextField fx:id="player2TextField" layoutX="214.0" layoutY="299.0" promptText="name" />
+      <Button fx:id="player1Submit" layoutX="263.0" layoutY="226.0" mnemonicParsing="false" onAction="#submit1" text="Submit" />
+      <Button fx:id="player2Submit" layoutX="263.0" layoutY="336.0" mnemonicParsing="false" onAction="#submit2" text="Submit" />
+      <Button fx:id="StartButton" layoutX="531.0" layoutY="361.0" mnemonicParsing="false" onAction="#start" text="Start" />
+   </children>
+</AnchorPane>

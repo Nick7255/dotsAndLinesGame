@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dotsandlinesgame.gameController">
+   <children>
+      <Label fx:id="Player1Name" alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="382.0" layoutY="80.0" prefHeight="34.0" prefWidth="141.0" text="Label" textAlignment="CENTER">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <Label fx:id="Player2Name" alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="376.0" layoutY="239.0" prefHeight="34.0" prefWidth="141.0" text="Label">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <Line layoutX="89.0" layoutY="71.0" startY="65.0" />
+      <Line endX="-33.0" fill="BLACK" layoutX="190.0" layoutY="71.0" startX="-100.0" />
+      <Line fx:id="line" endX="-46.0" layoutX="269.0" layoutY="71.0" startX="-113.0" />
+      <Line endX="-46.0" layoutX="337.0" layoutY="71.0" startX="-113.0" />
+      <Line endX="-46.0" layoutX="203.0" layoutY="136.0" startX="-113.0" />
+      <Line endX="-46.0" layoutX="269.0" layoutY="136.0" startX="-113.0" />
+      <Line endX="-46.0" layoutX="405.0" layoutY="70.0" startX="-113.0" />
+      <Line endX="-46.0" layoutX="337.0" layoutY="136.0" startX="-113.0" />
+      <Line endX="-46.0" layoutX="405.0" layoutY="136.0" startX="-113.0" />
+      <Line endX="-46.0" endY="13.0" layoutX="403.0" layoutY="123.0" startX="-46.0" startY="-52.0" />
+      <Line endX="-46.0" layoutX="203.0" layoutY="201.0" startX="-113.0" />
+      <Line endX="-43.5" endY="-0.5" layoutX="267.0" layoutY="201.0" startX="-111.0" />
+      <Line endX="-46.0" layoutX="337.0" layoutY="201.0" startX="-113.0" />
+      <Line endX="-46.0" layoutX="405.0" layoutY="201.0" startX="-113.0" />
+      <Line endX="-45.0" endY="1.0" layoutX="402.0" layoutY="200.0" startX="-45.0" startY="-63.5" />
+      <Line endX="-46.0" layoutX="202.0" layoutY="331.0" startX="-113.0" />
+      <Line endX="-47.0" endY="1.0" layoutX="203.0" layoutY="265.0" startX="-114.0" startY="1.0" />
+      <Line endX="-34.0" endY="1.0" layoutX="257.0" layoutY="265.0" startX="-101.0" startY="1.0" />
+      <Line endX="-35.0" endY="1.0" layoutX="325.0" layoutY="265.0" startX="-102.0" startY="1.0" />
+      <Line endX="-48.0" layoutX="271.0" layoutY="331.0" startX="-115.0" />
+      <Line endX="-46.79290771484375" endY="0.70709228515625" layoutX="405.0" layoutY="266.0" startX="-115.0" />
+      <Line endX="-46.0" endY="8.0" layoutX="403.0" layoutY="258.0" startX="-45.5" startY="-56.5" />
+      <Line endX="-191.70709228515625" endY="53.79290771484375" layoutX="347.0" layoutY="146.0" startX="-191.0" startY="-10.0" />
+      <Line endX="-113.5" endY="-18.5" layoutX="202.0" layoutY="284.0" startX="-113.5" startY="46.5" />
+      <Line endX="-45.0" layoutX="402.0" layoutY="331.0" startX="-111.0" />
+      <Line endX="-67.70709228515625" endY="35.5" layoutX="424.0" layoutY="295.0" startX="-67.70709228515625" startY="-28.29290771484375" />
+      <Line endX="-256.5" endY="-74.0" layoutX="412.0" layoutY="210.0" startX="-256.5" startY="-139.5" />
+      <Line endX="-45.0" endY="1.0" layoutX="134.0" layoutY="200.0" startX="-45.0" startY="-63.5" />
+      <Line endX="-47.0" endY="1.0" layoutX="337.0" layoutY="329.0" startX="-114.0" startY="1.0" />
+      <Line endX="-191.5" endY="48.5" layoutX="347.0" layoutY="217.0" startX="-191.353515625" startY="-16.5" />
+      <Line endX="-190.5" endY="54.5" layoutX="413.0" layoutY="211.0" startX="-190.0" startY="-10.0" />
+      <Line endX="-190.5" endY="54.5" layoutX="414.0" layoutY="81.0" startX="-191.0" startY="-10.0" />
+      <Line endX="-191.0" endY="58.0" layoutX="280.0" layoutY="208.0" startX="-191.0" startY="-7.0" />
+      <Line endX="-191.5" endY="57.5" layoutX="347.0" layoutY="273.0" startX="-190.64642333984375" startY="-6.79290771484375" />
+      <Line endX="-190.5" endY="54.5" layoutX="480.0" layoutY="145.0" startX="-190.5" startY="-10.0" />
+      <Line endX="-190.5" endY="48.5" layoutX="480.0" layoutY="87.0" startX="-190.5" startY="-16.0" />
+      <Line endX="-191.0" endY="55.0" layoutX="414.0" layoutY="276.0" startX="-191.0" startY="-10.0" />
+      <Line endX="-190.25" endY="55.29290771484375" layoutX="413.0" layoutY="145.0" startX="-190.70709228515625" startY="-8.792877197265625" />
+      <Line endX="-188.75" endY="54.29290771484375" layoutX="479.0" layoutY="210.0" startX="-189.0" startY="-9.0" />
+      <Line endX="-188.5" endY="56.5" layoutX="479.0" layoutY="274.0" startX="-189.0" startY="-9.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="25.0" layoutX="527.0" layoutY="85.0" stroke="BLACK" strokeType="INSIDE" width="27.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff3916" height="25.0" layoutX="524.0" layoutY="244.0" stroke="BLACK" strokeType="INSIDE" width="27.0" />
+      <Circle fx:id="dot00" layoutX="89.0" layoutY="71.0" onMousePressed="#selectDot" onMouseReleased="#endDot" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dot10" layoutX="156.0" layoutY="71.0" onMousePressed="#selectDot" onMouseReleased="#endDot" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dot01" layoutX="89.0" layoutY="136.0" onMousePressed="#selectDot" onMouseReleased="#endDot" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dot02" layoutX="89.0" layoutY="201.0" onMousePressed="#selectDot" onMouseReleased="#endDot" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dot04" layoutX="89.0" layoutY="331.0" onMousePressed="#selectDot" onMouseReleased="#endDot" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dot03" layoutX="89.0" layoutY="266.0" onMousePressed="#selectDot" onMouseReleased="#endDot" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dot11" layoutX="156.0" layoutY="136.0" onMousePressed="#selectDot" onMouseReleased="#endDot" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dot12" layoutX="156.0" layoutY="201.0" onMousePressed="#selectDot" onMouseReleased="#endDot" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dot13" layoutX="156.0" layoutY="266.0" onMousePressed="#selectDot" onMouseReleased="#endDot" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dot14" layoutX="156.0" layoutY="331.0" onMousePressed="#selectDot" onMouseReleased="#endDot" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dot20" layoutX="223.0" layoutY="71.0" onMousePressed="#selectDot" onMouseReleased="#endDot" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dot21" layoutX="223.0" layoutY="136.0" onMousePressed="#selectDot" onMouseReleased="#endDot" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dot22" layoutX="223.0" layoutY="201.0" onMousePressed="#selectDot" onMouseReleased="#endDot" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dot23" layoutX="223.0" layoutY="266.0" onMousePressed="#selectDot" onMouseReleased="#endDot" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dot24" layoutX="223.0" layoutY="331.0" onMousePressed="#selectDot" onMouseReleased="#endDot" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dot30" layoutX="290.0" layoutY="71.0" onMousePressed="#selectDot" onMouseReleased="#endDot" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dot31" layoutX="290.0" layoutY="136.0" onMousePressed="#selectDot" onMouseReleased="#endDot" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dot32" layoutX="290.0" layoutY="201.0" onMousePressed="#selectDot" onMouseReleased="#endDot" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dot33" layoutX="290.0" layoutY="266.0" onMousePressed="#selectDot" onMouseReleased="#endDot" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dot34" layoutX="290.0" layoutY="331.0" onMousePressed="#selectDot" onMouseReleased="#endDot" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dot40" layoutX="357.0" layoutY="71.0" onMousePressed="#selectDot" onMouseReleased="#endDot" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dot41" layoutX="357.0" layoutY="136.0" onMousePressed="#selectDot" onMouseReleased="#endDot" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dot42" layoutX="357.0" layoutY="201.0" onMousePressed="#selectDot" onMouseReleased="#endDot" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dot43" layoutX="357.0" layoutY="266.0" onMousePressed="#selectDot" onMouseReleased="#endDot" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="dot44" layoutX="357.0" layoutY="331.0" onMousePressed="#selectDot" onMouseReleased="#endDot" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text layoutX="456.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="456.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Label fx:id="scorePlayer2" layoutX="501.0" layoutY="281.0" text="0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="scorePlayer1" layoutX="501.0" layoutY="118.0" text="0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="nowPlaying1" layoutX="447.0" layoutY="51.0" prefHeight="17.0" prefWidth="84.0" />
+      <Label fx:id="nowPlaying2" layoutX="447.0" layoutY="213.0" prefHeight="17.0" prefWidth="84.0" />
+   </children>
+</AnchorPane>

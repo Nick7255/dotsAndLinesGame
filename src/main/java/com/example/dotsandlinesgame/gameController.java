@@ -9,6 +9,10 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Line;
 import javafx.scene.text.Font;
 
+import java.util.Arrays;
+import java.util.Objects;
+
+
 public class gameController{
     @FXML
     private Label scorePlayer1,scorePlayer2;
@@ -19,12 +23,11 @@ public class gameController{
     @FXML
     private Label nowPlaying1,nowPlaying2;
     @FXML
-    public Button button1,button2,button3,button4,button5,button6,
-            button7,button8,button9,button10,button11,button12;
-
+    private Button button0,button1,button2,button3,button4,button5,button6,
+            button7,button8,button9,button10,button11,button12, button13, button14, button15;
 
     @FXML
-    Line line = new Line();
+    private Line redLine;
 
     public String s = "Now Playing...";
 
@@ -41,38 +44,42 @@ public class gameController{
         Player2Name.setText(user2);
     }
 
-    public double selectDot (MouseEvent event){
-        System.out.println("dot selected");
-        line.setOpacity(1.0);
-        line.setStrokeWidth(6.0);
-        line.setStroke(Color.RED);
-        line.setStartX(event.getX());
-        line.setStartY(event.getY());
-        line.setEndX(endDot(event));
-        return 0;
+    public void selectDot (MouseEvent event){
+
     }
 
-    public double endDot (MouseEvent event) {
-        System.out.println("dot completed");
-        line.setEndX(event.getX());
-        line.setEndY(event.getY());
-        System.out.println(line);
-        return 0;
+    public void endDot (MouseEvent event) {
     }
-    public void scoreUp(ActionEvent event){
-        Integer score1 = Integer.valueOf(scorePlayer1.getText());
-        Integer score2= Integer.valueOf(scorePlayer2.getText());
-        button1.setText(String.valueOf(Player1Name.getText().charAt(0)));
-        button1.setFont(Font.font(13));
-        if (nowPlaying1.getText()==s){
-            score1=score1+1;
-            scorePlayer1.setText(String.valueOf(score1));
-        }else if(nowPlaying2.getText()==s){
-           score2=score2+1;
-           scorePlayer2.setText(String.valueOf(score2));
-        }
+
+    public void scoreUp(MouseEvent event){
+            String eventlogger = event.getPickResult().getIntersectedNode().getId();
+            String selectedButtonId = eventlogger.replaceAll("[\\D]", "");
+            int idx = Integer.parseInt(selectedButtonId);
+            Integer score1 = Integer.valueOf(scorePlayer1.getText());
+            Integer score2 = Integer.valueOf(scorePlayer2.getText());
+            Button[] buttons = {button0, button1, button2, button3, button4, button5, button6,
+                    button7, button8, button9, button10,
+                    button11, button12, button13, button14, button15};
+            for (int i = 0; i <= buttons.length; i = i + 1) {
+                if (buttons[idx] == buttons[i]) {
+                    if (nowPlaying1.getText() == s) {
+                        buttons[i].setText(String.valueOf(Player1Name.getText().charAt(0)).toUpperCase());
+                        buttons[i].setFont(Font.font(15));
+                        score1 = score1 + 1;
+                        scorePlayer1.setText(String.valueOf(score1));
+                    } else if (nowPlaying2.getText() == s) {
+                        buttons[i].setText(String.valueOf(Player2Name.getText().charAt(0)).toUpperCase());
+                        buttons[i].setFont(Font.font(15));
+                        score2 = score2 + 1;
+                        scorePlayer2.setText(String.valueOf(score2));
+                    }
+                    buttons[i].isDisabled();
+                    break;
+                }
+            }
     }
-    public void switchTurns(ActionEvent event) {
+
+    public void switchTurns (ActionEvent event) {
         if (nowPlaying1.getText()==s){
             nowPlaying2.setText(s);
             nowPlaying1.setText("");

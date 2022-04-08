@@ -19,46 +19,46 @@
          <font>
             <Font size="23.0" />
          </font></Label>
-      <Line layoutX="89.0" layoutY="71.0" startY="65.0" />
-      <Line endX="-33.0" fill="BLACK" layoutX="190.0" layoutY="71.0" startX="-100.0" />
-      <Line fx:id="line" endX="-46.0" layoutX="269.0" layoutY="71.0" startX="-113.0" />
-      <Line endX="-46.0" layoutX="337.0" layoutY="71.0" startX="-113.0" />
-      <Line endX="-46.0" layoutX="203.0" layoutY="136.0" startX="-113.0" />
-      <Line endX="-46.0" layoutX="269.0" layoutY="136.0" startX="-113.0" />
-      <Line endX="-46.0" layoutX="405.0" layoutY="70.0" startX="-113.0" />
-      <Line endX="-46.0" layoutX="337.0" layoutY="136.0" startX="-113.0" />
-      <Line endX="-46.0" layoutX="405.0" layoutY="136.0" startX="-113.0" />
-      <Line endX="-46.0" endY="13.0" layoutX="403.0" layoutY="123.0" startX="-46.0" startY="-52.0" />
-      <Line endX="-46.0" layoutX="203.0" layoutY="201.0" startX="-113.0" />
-      <Line endX="-43.5" endY="-0.5" layoutX="267.0" layoutY="201.0" startX="-111.0" />
-      <Line endX="-46.0" layoutX="337.0" layoutY="201.0" startX="-113.0" />
-      <Line endX="-46.0" layoutX="405.0" layoutY="201.0" startX="-113.0" />
-      <Line endX="-45.0" endY="1.0" layoutX="402.0" layoutY="200.0" startX="-45.0" startY="-63.5" />
-      <Line endX="-46.0" layoutX="202.0" layoutY="331.0" startX="-113.0" />
-      <Line endX="-47.0" endY="1.0" layoutX="203.0" layoutY="265.0" startX="-114.0" startY="1.0" />
-      <Line endX="-34.0" endY="1.0" layoutX="257.0" layoutY="265.0" startX="-101.0" startY="1.0" />
-      <Line endX="-35.0" endY="1.0" layoutX="325.0" layoutY="265.0" startX="-102.0" startY="1.0" />
-      <Line endX="-48.0" layoutX="271.0" layoutY="331.0" startX="-115.0" />
-      <Line endX="-46.79290771484375" endY="0.70709228515625" layoutX="405.0" layoutY="266.0" startX="-115.0" />
-      <Line endX="-46.0" endY="8.0" layoutX="403.0" layoutY="258.0" startX="-45.5" startY="-56.5" />
-      <Line endX="-191.70709228515625" endY="53.79290771484375" layoutX="347.0" layoutY="146.0" startX="-191.0" startY="-10.0" />
-      <Line endX="-113.5" endY="-18.5" layoutX="202.0" layoutY="284.0" startX="-113.5" startY="46.5" />
-      <Line endX="-45.0" layoutX="402.0" layoutY="331.0" startX="-111.0" />
-      <Line endX="-67.70709228515625" endY="35.5" layoutX="424.0" layoutY="295.0" startX="-67.70709228515625" startY="-28.29290771484375" />
-      <Line endX="-256.5" endY="-74.0" layoutX="412.0" layoutY="210.0" startX="-256.5" startY="-139.5" />
-      <Line endX="-45.0" endY="1.0" layoutX="134.0" layoutY="200.0" startX="-45.0" startY="-63.5" />
-      <Line endX="-47.0" endY="1.0" layoutX="337.0" layoutY="329.0" startX="-114.0" startY="1.0" />
-      <Line endX="-191.5" endY="48.5" layoutX="347.0" layoutY="217.0" startX="-191.353515625" startY="-16.5" />
-      <Line endX="-190.5" endY="54.5" layoutX="413.0" layoutY="211.0" startX="-190.0" startY="-10.0" />
-      <Line endX="-190.5" endY="54.5" layoutX="414.0" layoutY="81.0" startX="-191.0" startY="-10.0" />
-      <Line endX="-191.0" endY="58.0" layoutX="280.0" layoutY="208.0" startX="-191.0" startY="-7.0" />
-      <Line endX="-191.5" endY="57.5" layoutX="347.0" layoutY="273.0" startX="-190.64642333984375" startY="-6.79290771484375" />
-      <Line endX="-190.5" endY="54.5" layoutX="480.0" layoutY="145.0" startX="-190.5" startY="-10.0" />
-      <Line endX="-190.5" endY="48.5" layoutX="480.0" layoutY="87.0" startX="-190.5" startY="-16.0" />
-      <Line endX="-191.0" endY="55.0" layoutX="414.0" layoutY="276.0" startX="-191.0" startY="-10.0" />
-      <Line endX="-190.25" endY="55.29290771484375" layoutX="413.0" layoutY="145.0" startX="-190.70709228515625" startY="-8.792877197265625" />
-      <Line endX="-188.75" endY="54.29290771484375" layoutX="479.0" layoutY="210.0" startX="-189.0" startY="-9.0" />
-      <Line endX="-188.5" endY="56.5" layoutX="479.0" layoutY="274.0" startX="-189.0" startY="-9.0" />
+      <Line fx:id="line4" fill="BLACK" layoutX="89.0" layoutY="71.0" onMouseClicked="#changeColor" opacity="0.5" startY="65.0" strokeWidth="10.0" />
+      <Line fx:id="line0" endX="-33.0" fill="BLACK" layoutX="190.0" layoutY="71.0" onMouseClicked="#changeColor" opacity="0.5" startX="-100.0" strokeWidth="10.0" />
+      <Line fx:id="line2" endX="-46.0" fill="BLACK" layoutX="337.0" layoutY="71.0" onMouseClicked="#changeColor" opacity="0.5" startX="-113.0" strokeWidth="10.0" />
+      <Line fx:id="line9" endX="-46.0" fill="BLACK" layoutX="203.0" layoutY="136.0" onMouseClicked="#changeColor" opacity="0.5" startX="-113.0" strokeWidth="10.0" />
+      <Line fx:id="line10" endX="-46.0" fill="BLACK" layoutX="269.0" layoutY="136.0" onMouseClicked="#changeColor" opacity="0.5" startX="-113.0" strokeWidth="10.0" />
+      <Line fx:id="line3" endX="-46.0" fill="BLACK" layoutX="405.0" layoutY="70.0" onMouseClicked="#changeColor" opacity="0.5" startX="-113.0" strokeWidth="10.0" />
+      <Line fx:id="line11" endX="-46.0" fill="BLACK" layoutX="337.0" layoutY="136.0" onMouseClicked="#changeColor" opacity="0.5" startX="-113.0" strokeWidth="10.0" />
+      <Line fx:id="line12" endX="-46.0" fill="BLACK" layoutX="405.0" layoutY="136.0" onMouseClicked="#changeColor" opacity="0.5" startX="-113.0" strokeWidth="10.0" />
+      <Line fx:id="line8" endX="-46.0" endY="13.0" fill="BLACK" layoutX="403.0" layoutY="123.0" onMouseClicked="#changeColor" opacity="0.5" startX="-46.0" startY="-52.0" strokeWidth="10.0" />
+      <Line fx:id="line18" endX="-46.0" fill="BLACK" layoutX="203.0" layoutY="201.0" onMouseClicked="#changeColor" opacity="0.5" startX="-113.0" strokeWidth="10.0" />
+      <Line fx:id="line19" endX="-43.5" endY="-0.5" fill="BLACK" layoutX="267.0" layoutY="201.0" onMouseClicked="#changeColor" opacity="0.5" startX="-111.0" strokeWidth="10.0" />
+      <Line fx:id="line20" endX="-46.0" fill="BLACK" layoutX="337.0" layoutY="201.0" onMouseClicked="#changeColor" opacity="0.5" startX="-113.0" strokeWidth="10.0" />
+      <Line fx:id="line21" endX="-46.0" fill="BLACK" layoutX="405.0" layoutY="201.0" onMouseClicked="#changeColor" opacity="0.5" startX="-113.0" strokeWidth="10.0" />
+      <Line fx:id="line17" endX="-45.0" endY="1.0" fill="BLACK" layoutX="402.0" layoutY="200.0" onMouseClicked="#changeColor" opacity="0.5" startX="-45.0" startY="-63.5" strokeWidth="10.0" />
+      <Line fx:id="line36" endX="-46.0" fill="BLACK" layoutX="202.0" layoutY="331.0" onMouseClicked="#changeColor" opacity="0.5" startX="-113.0" strokeWidth="10.0" />
+      <Line fx:id="line27" endX="-47.0" endY="1.0" fill="BLACK" layoutX="203.0" layoutY="265.0" onMouseClicked="#changeColor" opacity="0.5" startX="-114.0" startY="1.0" strokeWidth="10.0" />
+      <Line fx:id="line28" endX="-34.0" endY="1.0" fill="BLACK" layoutX="257.0" layoutY="265.0" onMouseClicked="#changeColor" opacity="0.5" startX="-101.0" startY="1.0" strokeWidth="10.0" />
+      <Line fx:id="line29" endX="-35.0" endY="1.0" fill="BLACK" layoutX="325.0" layoutY="265.0" onMouseClicked="#changeColor" opacity="0.5" startX="-102.0" startY="1.0" strokeWidth="10.0" />
+      <Line fx:id="line37" endX="-48.0" fill="BLACK" layoutX="271.0" layoutY="331.0" onMouseClicked="#changeColor" opacity="0.5" startX="-115.0" strokeWidth="10.0" />
+      <Line fx:id="line30" endX="-46.79290771484375" endY="0.70709228515625" fill="BLACK" layoutX="405.0" layoutY="266.0" onMouseClicked="#changeColor" opacity="0.5" startX="-115.0" strokeWidth="10.0" />
+      <Line fx:id="line26" endX="-46.0" endY="8.0" fill="BLACK" layoutX="403.0" layoutY="258.0" onMouseClicked="#changeColor" opacity="0.5" startX="-45.5" startY="-56.5" strokeWidth="10.0" />
+      <Line fx:id="line14" endX="-191.70709228515625" endY="53.79290771484375" fill="BLACK" layoutX="347.0" layoutY="146.0" onMouseClicked="#changeColor" opacity="0.5" startX="-191.0" startY="-10.0" strokeWidth="10.0" />
+      <Line fx:id="line31" endX="-113.5" endY="-18.5" fill="BLACK" layoutX="202.0" layoutY="284.0" onMouseClicked="#changeColor" opacity="0.5" startX="-113.5" startY="46.5" strokeWidth="10.0" />
+      <Line fx:id="line39" endX="-45.0" fill="BLACK" layoutX="402.0" layoutY="331.0" onMouseClicked="#changeColor" opacity="0.5" startX="-111.0" strokeWidth="10.0" />
+      <Line fx:id="line35" endX="-67.70709228515625" endY="35.5" fill="BLACK" layoutX="424.0" layoutY="295.0" onMouseClicked="#changeColor" opacity="0.5" startX="-67.70709228515625" startY="-28.29290771484375" strokeWidth="10.0" />
+      <Line fx:id="line5" endX="-256.5" endY="-74.0" fill="BLACK" layoutX="412.0" layoutY="210.0" onMouseClicked="#changeColor" opacity="0.5" startX="-256.5" startY="-139.5" strokeWidth="10.0" />
+      <Line fx:id="line13" endX="-45.0" endY="1.0" fill="BLACK" layoutX="134.0" layoutY="200.0" onMouseClicked="#changeColor" opacity="0.5" startX="-45.0" startY="-63.5" strokeWidth="10.0" />
+      <Line fx:id="line38" endX="-47.0" endY="1.0" fill="BLACK" layoutX="337.0" layoutY="329.0" onMouseClicked="#changeColor" opacity="0.5" startX="-114.0" startY="1.0" strokeWidth="10.0" />
+      <Line fx:id="line23" endX="-191.5" endY="48.5" fill="BLACK" layoutX="347.0" layoutY="217.0" onMouseClicked="#changeColor" opacity="0.5" startX="-191.353515625" startY="-16.5" strokeWidth="10.0" />
+      <Line fx:id="line24" endX="-190.5" endY="54.5" fill="BLACK" layoutX="413.0" layoutY="211.0" onMouseClicked="#changeColor" opacity="0.5" startX="-190.0" startY="-10.0" strokeWidth="10.0" />
+      <Line fx:id="line1" endX="-33.0" fill="BLACK" layoutX="257.0" layoutY="71.0" onMouseClicked="#changeColor" opacity="0.5" startX="-100.0" strokeWidth="10.0" />
+      <Line fx:id="line6" endX="-190.5" endY="54.5" fill="BLACK" layoutX="414.0" layoutY="81.0" onMouseClicked="#changeColor" opacity="0.5" startX="-191.0" startY="-10.0" strokeWidth="10.0" />
+      <Line fx:id="line22" endX="-191.0" endY="58.0" fill="BLACK" layoutX="280.0" layoutY="208.0" onMouseClicked="#changeColor" opacity="0.5" startX="-191.0" startY="-7.0" strokeWidth="10.0" />
+      <Line fx:id="line32" endX="-191.5" endY="57.5" fill="BLACK" layoutX="347.0" layoutY="273.0" onMouseClicked="#changeColor" opacity="0.5" startX="-190.64642333984375" startY="-6.79290771484375" strokeWidth="10.0" />
+      <Line fx:id="line16" endX="-190.5" endY="54.5" fill="BLACK" layoutX="480.0" layoutY="145.0" onMouseClicked="#changeColor" opacity="0.5" startX="-190.5" startY="-10.0" strokeWidth="10.0" />
+      <Line fx:id="line7" endX="-190.5" endY="48.5" fill="BLACK" layoutX="480.0" layoutY="87.0" onMouseClicked="#changeColor" opacity="0.5" startX="-190.5" startY="-16.0" strokeWidth="10.0" />
+      <Line fx:id="line33" endX="-191.0" endY="55.0" fill="BLACK" layoutX="414.0" layoutY="276.0" onMouseClicked="#changeColor" opacity="0.5" startX="-191.0" startY="-10.0" strokeWidth="10.0" />
+      <Line fx:id="line15" endX="-190.25" endY="55.29290771484375" fill="BLACK" layoutX="413.0" layoutY="145.0" onMouseClicked="#changeColor" opacity="0.5" startX="-190.70709228515625" startY="-8.792877197265625" strokeWidth="10.0" />
+      <Line fx:id="line25" endX="-188.75" endY="54.29290771484375" fill="BLACK" layoutX="479.0" layoutY="210.0" onMouseClicked="#changeColor" opacity="0.5" startX="-189.0" startY="-9.0" strokeWidth="10.0" />
+      <Line fx:id="line34" endX="-188.5" endY="56.5" fill="BLACK" layoutX="479.0" layoutY="274.0" onMouseClicked="#changeColor" opacity="0.5" startX="-189.0" startY="-9.0" strokeWidth="10.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="25.0" layoutX="527.0" layoutY="85.0" stroke="BLACK" strokeType="INSIDE" width="27.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff3916" height="25.0" layoutX="524.0" layoutY="244.0" stroke="BLACK" strokeType="INSIDE" width="27.0" />
       <Circle fx:id="dot00" layoutX="89.0" layoutY="71.0" onMousePressed="#selectDot" onMouseReleased="#endDot" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
@@ -114,23 +114,22 @@
          <font>
             <Font size="16.0" />
          </font></Label>
-      <Button fx:id="button0" layoutX="103.0" layoutY="87.0" mnemonicParsing="false"  onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
+      <Button fx:id="button0" layoutX="103.0" layoutY="87.0" mnemonicParsing="false" onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
       <Button fx:id="button1" layoutX="170.0" layoutY="87.0" mnemonicParsing="false" onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
       <Button fx:id="button2" layoutX="237.0" layoutY="87.0" mnemonicParsing="false" onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
       <Button fx:id="button3" layoutX="304.0" layoutY="87.0" mnemonicParsing="false" onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
-      <Button fx:id="button4" layoutX="170.0" layoutY="152.0" mnemonicParsing="false"  onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
-      <Button fx:id="button5" layoutX="237.0" layoutY="151.0" mnemonicParsing="false"  onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
-      <Button fx:id="button6" layoutX="304.0" layoutY="152.0" mnemonicParsing="false"  onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
-      <Button fx:id="button7" layoutX="104.0" layoutY="217.0" mnemonicParsing="false"  onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
-      <Button fx:id="button8" layoutX="103.0" layoutY="152.0" mnemonicParsing="false"  onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
-      <Button fx:id="button9" layoutX="170.0" layoutY="217.0" mnemonicParsing="false"  onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
-      <Button fx:id="button10" layoutX="237.0" layoutY="217.0" mnemonicParsing="false"  onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
-      <Button fx:id="button11" layoutX="304.0" layoutY="217.0" mnemonicParsing="false"  onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
-      <Button fx:id="button12" layoutX="104.0" layoutY="282.0" mnemonicParsing="false"  onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
-      <Button fx:id="button13" layoutX="170.0" layoutY="282.0" mnemonicParsing="false"  onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
-      <Button fx:id="button14" layoutX="237.0" layoutY="281.0" mnemonicParsing="false"  onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
-      <Button fx:id="button15" layoutX="304.0" layoutY="282.0" mnemonicParsing="false"  onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
+      <Button fx:id="button4" layoutX="170.0" layoutY="152.0" mnemonicParsing="false" onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
+      <Button fx:id="button5" layoutX="237.0" layoutY="151.0" mnemonicParsing="false" onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
+      <Button fx:id="button6" layoutX="304.0" layoutY="152.0" mnemonicParsing="false" onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
+      <Button fx:id="button7" layoutX="104.0" layoutY="217.0" mnemonicParsing="false" onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
+      <Button fx:id="button8" layoutX="103.0" layoutY="152.0" mnemonicParsing="false" onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
+      <Button fx:id="button9" layoutX="170.0" layoutY="217.0" mnemonicParsing="false" onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
+      <Button fx:id="button10" layoutX="237.0" layoutY="217.0" mnemonicParsing="false" onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
+      <Button fx:id="button11" layoutX="304.0" layoutY="217.0" mnemonicParsing="false" onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
+      <Button fx:id="button12" layoutX="104.0" layoutY="282.0" mnemonicParsing="false" onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
+      <Button fx:id="button13" layoutX="170.0" layoutY="282.0" mnemonicParsing="false" onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
+      <Button fx:id="button14" layoutX="237.0" layoutY="281.0" mnemonicParsing="false" onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
+      <Button fx:id="button15" layoutX="304.0" layoutY="282.0" mnemonicParsing="false" onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
       <Button fx:id="switcher" layoutX="198.0" layoutY="355.0" mnemonicParsing="false" onAction="#switchTurns" text="Switch Turns" />
-      <Line fx:id="redLine" endX="100.0" layoutX="453.0" layoutY="25.0" opacity="0.0" startX="-100.0" />
    </children>
 </AnchorPane>

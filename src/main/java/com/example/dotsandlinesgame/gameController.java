@@ -2,7 +2,11 @@ package com.example.dotsandlinesgame;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.geometry.Rectangle2D;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -12,7 +16,9 @@ import javafx.scene.layout.BackgroundFill;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Line;
 import javafx.scene.text.Font;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Objects;
@@ -33,7 +39,13 @@ public class gameController{
     private Line line0,line1,line2,line3,line4,line5,line6,line7,line8,line9,line10,line11,line12,line13,
             line14,line15,line16,line17,line18,line19,line20,line21,line22,line23,line24,line25,line26,line27,
             line28,line29,line30,line31,line32,line33,line34,line35,line36,line37,line38,line39;
+    @FXML
+    private Button endGame;
 
+
+    private Parent newroot;
+    private Stage stage;
+    private Scene newscene;
 
 
 
@@ -59,6 +71,8 @@ public class gameController{
     public void endDot (MouseEvent event) {
     }
 
+    public int winnerBlue = 0 ;
+    public int winnerRed = 0 ;
 
     public void changeColor(MouseEvent event){
         String eventlogger = event.getPickResult().getIntersectedNode().getId();
@@ -105,6 +119,8 @@ public class gameController{
                             score1 = score1 + 1;
                             scorePlayer1.setText(String.valueOf(score1));
                             buttons[i].setStyle("-fx-Background-color: #1e90ff;");
+                            winnerBlue=winnerBlue+1;
+                            System.out.println(winnerBlue);
                             break;
                         } else if (Objects.equals(nowPlaying2.getText(), s) && !Objects.equals(buttons[i].getText(), String.valueOf(Player1Name.getText().charAt(0)).toUpperCase())) {
                             buttons[i].setText(String.valueOf(Player2Name.getText().charAt(0)).toUpperCase());
@@ -112,6 +128,8 @@ public class gameController{
                             score2 = score2 + 1;
                             scorePlayer2.setText(String.valueOf(score2));
                             buttons[i].setStyle("-fx-Background-color: #ff3916;");
+                            winnerRed=winnerRed+1;
+                            System.out.println(winnerRed);
                             break;
                         } else {
                             Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -124,7 +142,29 @@ public class gameController{
             }
     }
 
-
+    public void endGame(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("winner.fxml"));
+        newroot = loader.load();
+        winnerController controllerForWinner = loader.getController();
+        newscene = new Scene(newroot);
+        if(winnerBlue>winnerRed){
+            String c = "-fx-Background-color: #1e90ff;";
+            controllerForWinner.announcewinner(Player1Name.getText(),c);
+            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            stage.setScene(newscene);
+            stage.show();
+        } else if (winnerRed>winnerBlue) {
+            String c = "-fx-Background-color: #ff3916";
+            controllerForWinner.announcewinner(Player2Name.getText(),c);
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(newscene);
+            stage.show();
+        }else if (winnerRed==winnerBlue)
+            controllerForWinner.draw();
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(newscene);
+            stage.show();
+    }
 
     public void switchTurns (ActionEvent event) {
         if (nowPlaying1.getText()==s){

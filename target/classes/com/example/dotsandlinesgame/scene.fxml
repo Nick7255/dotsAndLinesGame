@@ -33,5 +33,6 @@
       <Button fx:id="player1Submit" layoutX="263.0" layoutY="226.0" mnemonicParsing="false" onAction="#submit1" text="Submit" />
       <Button fx:id="player2Submit" layoutX="263.0" layoutY="336.0" mnemonicParsing="false" onAction="#submit2" text="Submit" />
       <Button fx:id="StartButton" layoutX="531.0" layoutY="361.0" mnemonicParsing="false" onAction="#start" text="Start" />
+      <Label layoutX="14.0" layoutY="374.0" text="Nikos krassas AM5449 email: nikrass@cs.ihu.gr" />
    </children>
 </AnchorPane>

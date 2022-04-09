@@ -130,6 +130,8 @@
       <Button fx:id="button13" layoutX="170.0" layoutY="282.0" mnemonicParsing="false" onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
       <Button fx:id="button14" layoutX="237.0" layoutY="281.0" mnemonicParsing="false" onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
       <Button fx:id="button15" layoutX="304.0" layoutY="282.0" mnemonicParsing="false" onMouseClicked="#scoreUp" prefHeight="34.0" prefWidth="40.0" />
-      <Button fx:id="switcher" layoutX="198.0" layoutY="355.0" mnemonicParsing="false" onAction="#switchTurns" text="Switch Turns" />
+      <Button fx:id="switcher" layoutX="89.0" layoutY="355.0" mnemonicParsing="false" onAction="#switchTurns" text="Switch Turns" />
+      <Label layoutX="14.0" layoutY="14.0" text="Nikos krassas AM5449 email: nikrass@cs.ihu.gr" />
+      <Button fx:id="endGame" layoutX="283.0" layoutY="355.0" mnemonicParsing="false" onAction="#endGame" text="End Game" />
    </children>
 </AnchorPane>

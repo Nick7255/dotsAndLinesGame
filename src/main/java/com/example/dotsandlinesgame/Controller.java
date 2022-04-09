@@ -53,7 +53,6 @@ public class Controller {
         controllerForGame.Player2Name(user2);
         controllerForGame.initializeTurn(s);
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();

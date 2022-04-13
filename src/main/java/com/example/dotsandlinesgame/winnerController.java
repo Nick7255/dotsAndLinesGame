@@ -17,7 +17,7 @@ public class winnerController {
     private AnchorPane anchornew;
 
     public void announcewinner(String s,String c){
-        winner.setText(s+" wins");
+        winner.setText(s.trim()+" wins");
         anchornew.setStyle(c);
     }
 

@@ -47,10 +47,7 @@ public class gameController{
     private Stage stage;
     private Scene newscene;
 
-
-
     public String s = "Now Playing...";
-
 
     public void initializeTurn(String s){
         nowPlaying1.setText(s);
@@ -114,22 +111,20 @@ public class gameController{
             for (int i = 0; i <= buttons.length; i = i + 1) {
                     if (buttons[idx] == buttons[i]) {
                         if (Objects.equals(nowPlaying1.getText(), s) && !Objects.equals(buttons[i].getText(), String.valueOf(Player2Name.getText().charAt(0)).toUpperCase())) {
-                            buttons[i].setText(String.valueOf(Player1Name.getText().charAt(0)).toUpperCase());
+                            buttons[i].setText(String.valueOf(Player1Name.getText().charAt(0)).toUpperCase().trim());
                             buttons[i].setFont(Font.font(15));
                             score1 = score1 + 1;
                             scorePlayer1.setText(String.valueOf(score1));
                             buttons[i].setStyle("-fx-Background-color: #1e90ff;");
                             winnerBlue=winnerBlue+1;
-                            System.out.println(winnerBlue);
                             break;
                         } else if (Objects.equals(nowPlaying2.getText(), s) && !Objects.equals(buttons[i].getText(), String.valueOf(Player1Name.getText().charAt(0)).toUpperCase())) {
-                            buttons[i].setText(String.valueOf(Player2Name.getText().charAt(0)).toUpperCase());
+                            buttons[i].setText(String.valueOf(Player2Name.getText().charAt(0)).toUpperCase().trim());
                             buttons[i].setFont(Font.font(15));
                             score2 = score2 + 1;
                             scorePlayer2.setText(String.valueOf(score2));
                             buttons[i].setStyle("-fx-Background-color: #ff3916;");
                             winnerRed=winnerRed+1;
-                            System.out.println(winnerRed);
                             break;
                         } else {
                             Alert alert = new Alert(Alert.AlertType.ERROR);

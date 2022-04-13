@@ -49,8 +49,8 @@ public class Controller {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("game.fxml"));
         root = loader.load();
         gameController controllerForGame = loader.getController();
-        controllerForGame.Player1Name(user1);
-        controllerForGame.Player2Name(user2);
+        controllerForGame.Player1Name(user1.trim());
+        controllerForGame.Player2Name(user2.trim());
         controllerForGame.initializeTurn(s);
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
